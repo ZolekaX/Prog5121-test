@@ -1,0 +1,26 @@
+public abstract class Console implements IConsoles {
+private String consoleType;
+private String storeName;
+private int totalSales;
+
+public Console(String consoleType, String storeName, int totalSales) {
+this.consoleType = consoleType;
+this.storeName = storeName;
+this.totalSales = totalSales;
+}
+
+@Override
+public String getConsoleType() {
+return consoleType;
+}
+
+@Override
+public String getStore() {
+return storeName;
+}
+
+@Override
+public int getTotalSales() {
+return totalSales;
+}
+}
